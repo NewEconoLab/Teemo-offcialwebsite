@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>Teemo</title>
+    <link rel="icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/qa.css">
+    <script>
+        var w = document.documentElement.clientWidth;
+        // if (w < 728)
+        // {
+        //     document.documentElement.style.fontSize = w / 3.75 + "px";
+        // } else
+        // {
+            document.documentElement.style.fontSize = w / 14.4 + "px";
+        // }
+
+        window.onresize = function ()
+        {
+            // var w = document.documentElement.clientWidth;
+            // if (w < 728)
+            // {
+            //     document.documentElement.style.fontSize = w / 3.75 + "px";
+            // } else
+            // {
+                document.documentElement.style.fontSize = w / 14.4 + "px";
+            // }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- <div class="menu" id="menu"></div>
+        <div class="left">
+            <img src="./img/logo.png" alt="logo.png" hidden>
+            <img src="./img/logo.png" alt="logo2.png" hidden>
+            <span></span>
+        </div> -->
+        <!-- <span class="mobile-language"><a href="./index-En.html">中</a></span> -->
+        <div class="left">
+            <a href="./index.html">
+                <img src="./img/teemologo.png" alt="teemologo.png">
+            </a>
+            <strong>用户Q&A</strong>
+        </div>
+        <div class="right" id="right">
+            <!-- <span class="close-icon" id="closeBtn"></span> -->
+            <div class="language-toggle" id="language">
+                <div class="language-left">
+                    <span>中</span>
+                    <img src="./img/ch.png" alt="">
+                </div>
+                <div class="triangle-wrap">
+                    <div class="triangle"></div>
+                </div>
+                <div class="select-country" id="selectlang">
+                    <ul>
+                        <li><a href="./index.html">中文</a></li>
+                        <li><a href="./index-En.html">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="continar">
+        <div class="qa-wrapper">
+            <h1 class="qa-title">Q&A</h1>
+            <hr style="height:1px;border:none;border-top:1px dashed #B2B2B2;">
+            <h2>安全提示</h2>
+            <p>请妥善保存钱包备份，不要将私钥或备份文件分享给任何人，任何拥有私钥的人都可以在不经您授权的情况下转移钱包内的资产。
+                Teemo钱包的核心功能都是离线的，您的钱包数据是在本地随机生成，并被加密保存在您的设备中的。一旦您卸载了浏览器或清除了插件数据，只能通过钱包备份进行恢复，我们无法为您提供找回钱包的服务。</p>
+            <h2>如何使用Teemo插件钱包</h2>
+            <p>您必须创建或导入钱包后，才可以使用Teemo钱包。
+                登陆钱包后，您可以直接使用Teemo钱包发送交易，转账给他人。
+                您也可以关闭钱包页面，前往您所需要使用的dapp，直接在dapp上进行操作。当需要dapp获取您的钱包数据或发送交易时，Teemo会自动为您弹出确认页，您只需要确认或拒绝来自dapp的请求。</p>
+            <h2>如何导入已有钱包</h2>
+            <p>Teemo暂时只支持导入wif私钥，nep2加密字符串和nep6加密文件。如果您使用wif私钥导入钱包，需要设置登陆密码；如果您使用nep2字符串或nep6加密文件导入钱包，则会自动使用已有的加密密码作为钱包密码。
+            </p>
+            <h2>如何连接硬件钱包</h2>
+            <p>Teemo暂时还未支持硬件钱包，但这项功能已经排入开发计划，将在后续版本加入。</p>
+            <h2>为何交易一直在排队中</h2>
+            <p>由于区块链的特性，所有交易只有在被节点打包确认并出块后才算成功。NEO大约每20-30秒会出一个块，一个块中能够打包的交易数量有限，因此当网络拥堵时，需要排队等待交易被确认。
+                由于每个块只有20笔免费交易的额度，因此如果您的交易没有添加手续费，等待时间可能会比交了手续费的交易更长。
+                还有一种特殊情况是当节点异常时无法达成共识，会导致停止出块。这种情况下只能耐心等待网络恢复。
+                当交易处于排队中时，请不要进行重复操作，因为每一次操作都会进入排队队列中，最终都会被区块链确认。重复操作可能会导致意料之外的资金损失。</p>
+            <h2>如何设置交易手续费</h2>
+            <p>Dapp在发送交易请求时，一般会附带交易手续费，您只需要确认即可。如果没有附带手续费，或者交易是由您自己发起的，您可以选择添加手续费以优先确认。
+                手动添加的手续费默认为最低值0.001gas，以目前的网络交易量是完全足够的，所以暂时不支持自由配置。</p>
+            <h2>如何在新的设备上继续使用Teemo</h2>
+            <p>将钱包备份文件在新的设备上重新进行导入即可。但是由于Teemo钱包的数据全部保存采用本地保存，因此在新设备上您将无法查看旧设备上的交易历史记录。</p>
+            <h2>为什么我找不到切换语言、添加token等功能</h2>
+            <p>这些功能我们正在加紧开发，在钱包下个版本，我们将支持语言切换、自动上锁、清空交易历史、多钱包管理、钱包备份、钱包删除、token管理等功能。</p>
+        </div>
+        <div class="goback-btn">
+            <a href="./index.html" class="goback-a">返回官网</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-wrap">
+            <div class="relation-list">
+                <ul>
+                    <li class="img-icon">
+                        <a href="https://twitter.com/NewEconoLab" target="_blank" class="img-twitter"></a>
+                    </li>
+                    <li class="img-icon" id="qqfooter">
+                        <a href="#qqfooter" class="img-qq"></a>
+                    </li>
+                    <li class="img-icon" id="wechatfooter">
+                        <a href="#wechatfooter" class="img-wechat"></a>
+                    </li>
+                    <li class="img-icon">
+                        <a href="https://github.com/NewEconoLab" target="_blank" class="img-git"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-msg">
+                <span>Made with</span>
+                <img src="./img/loving-heart.png" alt="">
+                <span>by NewEconoLabs</span>
+                <br>
+                <span>© 2018 NewEconoLabs</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

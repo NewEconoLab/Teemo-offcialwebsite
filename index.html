@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>Teemo</title>
+    <link rel="icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script>
+        var w = document.documentElement.clientWidth;
+        // if (w < 728)
+        // {
+        //     document.documentElement.style.fontSize = w / 3.75 + "px";
+        // } else
+        // {
+            document.documentElement.style.fontSize = w / 14.4 + "px";
+        // }
+
+        window.onresize = function ()
+        {
+            // var w = document.documentElement.clientWidth;
+            // if (w < 728)
+            // {
+            //     document.documentElement.style.fontSize = w / 3.75 + "px";
+            // } else
+            // {
+                document.documentElement.style.fontSize = w / 14.4 + "px";
+            // }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- <div class="menu" id="menu"></div>
+        <div class="left">
+            <img src="./img/logo.png" alt="logo.png" hidden>
+            <img src="./img/logo.png" alt="logo2.png" hidden>
+            <span></span>
+        </div> -->
+        <!-- <span class="mobile-language"><a href="./index-En.html">中</a></span> -->
+        <div class="left">
+            <img src="./img/teemologo.png" alt="teemologo.png">
+        </div>
+        <div class="right" id="right">
+            <span class="close-icon" id="closeBtn"></span>
+            <ul id="nav" class="nav">
+                <li class="active" data-boxid="welcome">首页</li>
+                <li data-boxid="introduce">介绍</li>
+                <li data-boxid="trait">特点</li>
+                <li data-boxid="about">关于</li>
+                <li data-boxid="help">帮助&支持</li>
+            </ul>
+            <div class="language-toggle" id="language">
+                <div class="language-left">
+                    <span>中</span>
+                    <img src="./img/ch.png" alt="">
+                </div>
+                <div class="triangle-wrap">
+                    <div class="triangle"></div>
+                </div>
+                <div class="select-country" id="selectlang">
+                    <ul>
+                        <li><a href="./index.html">中文</a></li>
+                        <li><a href="./index-En.html">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="continar">
+        <img src="./img/big-bg.png" alt="big-bg.png" hidden>
+        <div class="swiper-container content-one" id="welcome">
+            <div class="contentone-wrap">
+                <div class="big-title">TEEMO</div>
+                <div class="small-title">BRING NEO CLOSER TO YOU</div>
+                <div class="download-img">
+                    <img src="./img/chrome-icon.png" alt="chrome-icon.png" class="chrome-img">
+                    <img src="./img/download.png" alt="download.png" class="download-img">
+                    <a href="./install-zh.html" class="download-text">如何安装</a>
+                </div>
+            </div>
+        </div>
+        <div class="content-other">
+            <div class="content content-two swiper-container" id="introduce">
+                <div class="title">
+                    <strong>什么是TEEMO？</strong>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="introduce-text">
+                    Teemo是一款由NEL开发的率先支持neo生态的插件钱包，您可以用它来管理资产，接收、发送代币，并可以在使用第三方应用时审查他们的身份和他们请求的每一笔交易。
+                </div>
+                <div class="introduce-img">
+                    <img class="bg-first" src="./img/bg1-zh.png" alt="bg1-zh.png">
+                    <img class="bg-second" src="./img/bg2-zh.png" alt="bg2-zh.png">
+                    <img class="bg-third" src="./img/bg3-zh.png" alt="bg3-zh.png">
+                </div>
+            </div>
+            <div class="content content-three swiper-container" id="trait">
+                <div class="trait-title">
+                    <div class="title">
+                        <strong>特点</strong>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+
+                <div class="trait-wrapper">
+                    <div class="trait-small">
+                        <div class="small-img">
+                            <img src="./img/safe.png" alt="">
+                        </div>
+                        <strong class="small-title">安全</strong>
+                        <p class="small-text">Teemo的私钥隔离机制使得任何应用只能在您的授权下拿到有限的帐户信息，确保您的帐户安全。</p>
+                    </div>
+                    <div class="trait-small">
+                        <div class="small-img">
+                            <img src="./img/credible.png" alt="">
+                        </div>
+                        <strong class="small-title">可信</strong>
+                        <p class="small-text">
+                            当您确认来自第三方的交易请求时，除了能看到区块链必须的地址、金额外，Teemo还会显示请求者的网站信息、交易备注、合约方法、参数等作为参考信息以便您识别。</p>
+                    </div>
+                    <div class="trait-small">
+                        <div class="small-img">
+                            <img src="./img/privacy.png" alt="">
+                        </div>
+                        <strong class="small-title">隐私</strong>
+                        <p class="small-text">所有和第三方信息有关的交易详情记录只会保存在本地，并可以随时清除。区块链上只能查到简单的转账记录。</p>
+                    </div>
+                    <div class="trait-small">
+                        <div class="small-img">
+                            <img src="./img/amenity.png" alt="">
+                        </div>
+                        <strong class="small-title">方便</strong>
+                        <p class="small-text">在使用dapp时Teemo会自动打开，无需提前开启。<br />Teemo钱包支持NNS域名转账，第三方也可以使用域名给合约进行信用背书。</p>
+                    </div>
+                </div>
+                <div class="trait-smallbox-top"></div>
+                <div class="trait-smallbox-bottom"></div>
+            </div>
+            <div class="content content-four swiper-container" id="about">
+                <div class="title">
+                    <strong>关于TEEMO</strong>
+                    <div class="title-underline"></div>
+                    <div class="white-box"></div>
+                </div>
+                <div class="about-content">
+                    <p class="about-text">Teemo是一款开源钱包，所有代码公开透明，接受全体开发者和用户的审查监督。我们为每一行代码负责，确保钱包的安全性和可靠性。</p>
+                    <p class="about-text">
+                        用户使用dapp时再也无需担心钱包被盗，使用teemo一键授权dapp登陆，安全方便。开发者无需再开发新的钱包，您可以免费接入Teemo钱包，专注于应用功能开发。</p>
+                    <p class="about-text">
+                        Teemo与O3钱包共同协定了Dapp与钱包对接标准，并致力于推动该标准在NEO的普及。现在接入Teemo，就可以为Teemo用户和O3用户甚至未来的全部NEO用户提供您的服务。</p>
+                </div>
+                <div class="left-wrapper">
+                    <div class="zi-box"></div>
+                    <div class="cheng-box"></div>
+                    <div class="green-box"></div>
+                    <div class="blue-box"></div>
+                    <div class="fen-box"></div>
+                </div>
+                <div class="right-wrapper">
+                    <div class="fen-box"></div>
+                    <div class="zi-box"></div>
+                    <div class="blue-box"></div>
+                    <div class="cheng-box"></div>
+                    <div class="green-box"></div>
+                </div>
+                <div class="none-box"></div>
+            </div>
+            <div class="content content-five swiper-container" id="help">
+                <div class="title">
+                    <strong>帮助&支持</strong>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="help-wrapper">
+                    <div class="help-box">
+                        <strong class="help-title">用户</strong>
+                        <a href="./qa-zh.html" class="help-link">Q&A</a>
+                    </div>
+                    <div class="help-box">
+                        <strong class="help-title">开发者</strong>
+                        <a href="https://dapi.nel.group/#neo-dapi" class="help-link" target="_blank">dapi文档</a>
+                    </div>
+                    <div class="help-box">
+                        <strong class="help-title">开源代码</strong>
+                        <a href="https://github.com/NewEconoLab/TeemmoWallet" class="help-link" target="_blank">查看GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-wrap">
+            <div class="relation-list">
+                <ul>
+                    <li class="img-icon">
+                        <a href="https://twitter.com/NewEconoLab" target="_blank" class="img-twitter"></a>
+                    </li>
+                    <li class="img-icon" id="qqfooter">
+                        <a href="#qqfooter" class="img-qq"></a>
+                    </li>
+                    <li class="img-icon" id="wechatfooter">
+                        <a href="#wechatfooter" class="img-wechat"></a>
+                    </li>
+                    <li class="img-icon">
+                        <a href="https://github.com/NewEconoLab" target="_blank" class="img-git"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-msg">
+                <span>Made with</span>
+                <img src="./img/loving-heart.png" alt="">
+                <span>by NewEconoLabs</span>
+                <br>
+                <span>© 2018 NewEconoLabs</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/jquery-1.10.1.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

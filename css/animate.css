@@ -1,0 +1,57 @@
+.content-two .bg-first,
+.content-two .bg-second,
+.content-two .bg-third {
+  opacity: 0;
+  -webkit-transition: -webkit-transform 1s 0.2s, opacity 1s 0.2s;
+  -moz-transition: -moz-transform 1s 0.2s, opacity 1s 0.2s;
+  -ms-transition: -ms-transform 1s 0.2s, opacity 1s 0.2s;
+  transition: transform 1s 0.2s, opacity 1s 0.2s;
+}
+.content-two .bg-first {
+  -moz-transform: translateX(-100px);
+  -webkit-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  transform: translateX(-100px);
+}
+.content-two .bg-second {
+  -moz-transform: translateY(-100px);
+  -webkit-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+}
+.content-two .bg-third {
+  -moz-transform: translateX(100px);
+  -webkit-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  transform: translateX(100px);
+}
+.content-two.active .bg-first,
+.content-two.active .bg-second,
+.content-two.active .bg-third {
+  opacity: 1;
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+.content-two.active .bg-first {
+  opacity: 1;
+  -moz-transform: translateX(0) rotate(-30deg);
+  -webkit-transform: translateX(0) rotate(-30deg);
+  -ms-transform: translateX(0) rotate(-30deg);
+  transform: translateX(0) rotate(-30deg);
+}
+.content-two.active .bg-second {
+  opacity: 1;
+  -moz-transform: translateX(0) rotate(60deg);
+  -webkit-transform: translateX(0) rotate(60deg);
+  -ms-transform: translateX(0) rotate(60deg);
+  transform: translateX(0) rotate(60deg);
+}
+.content-two.active .bg-third {
+  opacity: 1;
+  -moz-transform: translateX(0) rotate(-30deg);
+  -webkit-transform: translateX(0) rotate(-30deg);
+  -ms-transform: translateX(0) rotate(-30deg);
+  transform: translateX(0) rotate(-30deg);
+}
