@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>Teemo</title>
+    <link rel="icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/qa.css">
+    <script>
+        var w = document.documentElement.clientWidth;
+        // if (w < 728)
+        // {
+        //     document.documentElement.style.fontSize = w / 3.75 + "px";
+        // } else
+        // {
+        document.documentElement.style.fontSize = w / 14.4 + "px";
+        // }
+
+        window.onresize = function ()
+        {
+            // var w = document.documentElement.clientWidth;
+            // if (w < 728)
+            // {
+            //     document.documentElement.style.fontSize = w / 3.75 + "px";
+            // } else
+            // {
+            document.documentElement.style.fontSize = w / 14.4 + "px";
+            // }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- <div class="menu" id="menu"></div>
+        <div class="left">
+            <img src="./img/logo.png" alt="logo.png" hidden>
+            <img src="./img/logo.png" alt="logo2.png" hidden>
+            <span></span>
+        </div> -->
+        <!-- <span class="mobile-language"><a href="./index-En.html">中</a></span> -->
+        <div class="left">
+            <a href="./index-en.html">
+                <img src="./img/teemologo.png" alt="teemologo.png">
+            </a>
+            <strong>用户Q&A</strong>
+        </div>
+        <div class="right" id="right">
+            <!-- <span class="close-icon" id="closeBtn"></span> -->
+            <div class="language-toggle" id="language">
+                <div class="language-left">
+                    <span>中</span>
+                    <img src="./img/ch.png" alt="">
+                </div>
+                <div class="triangle-wrap">
+                    <div class="triangle"></div>
+                </div>
+                <div class="select-country" id="selectlang">
+                    <ul>
+                        <li><a href="./index.html">中文</a></li>
+                        <li><a href="./index-en.html">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="continar">
+        <div class="qa-wrapper">
+            <h1 class="qa-title">Q&A</h1>
+            <hr style="height:1px;border:none;border-top:1px dashed #B2B2B2;">
+            <h2>Security warning</h2>
+            <p>Please save your wallet backup properly and don't share your private key or backup file with anyone, as
+                anyone with your private key can transfer the assets in your wallet without your authorization.
+                The core features of Teemo Wallet are offline, and your wallet data is randomly generated locally and
+                encrypted and stored on your device. Once you uninstall the browser or delete the extension data, you
+                can only recover it through the wallet backup, we can not provide you with the service to retrieve the
+                wallet.</p>
+            <h2>How to use the Teemo extension wallet?</h2>
+            <p>You must create or import a wallet before you can use the Teemo wallet.
+                Once you have logged into your wallet, you can use the Teemo wallet to send the transaction and transfer
+                assets to others.
+                You can also close the wallet page and go to the dapp you need to use and operate directly on the dapp.
+                When you need dapp to collect your wallet data or send a transaction, Teemo will automatically pop up a
+                confirmation page for you, where you only need to confirm or reject the request from a dapp.</p>
+            <h2>How to import an existing wallet?</h2>
+            <p>Teemo currently only supports importing WIF private keys, NEP2 encrypted strings and NEP6 encrypted
+                files. If you import the wallet using a WIF private key , you need to set the login password; if you
+                import the wallet using a nep2 string or nep6 encrypted file, the existing encrypted password will be
+                automatically used as the wallet password.
+            </p>
+            <h2>How to connect a hardware wallet?</h2>
+            <p>Teemo has not yet supported the hardware wallet, but this feature has been in the development plan and
+                will be added in the subsequent release.</p>
+            <h2>Why does the transaction always wait in line?</h2>
+            <p>Due to the nature of the blockchain, all transactions are only successful after being packaged and
+                confirmed by the node. NEO produces a block every 20-30 seconds, and the number of transactions that can
+                be packaged in one block is limited, so when the network is congested, it needs to wait in line for the
+                transaction to be confirmed.
+                Since there are only 20 free transactions quota per block, if you does not add a fee to a transaction,
+                its wait time may be longer than the transaction with a fee.
+                There is also a special case where a consensus cannot be reached when a node is abnormal, which causes
+                the block production to stop. In this case, you can only wait patiently for network recovery.
+                When the transaction waits in line, do not repeat the operation, as each operation will join the line
+                and will eventually be confirmed by the blockchain. Repeated operations can result in unexpected
+                financial losses.</p>
+            <h2>How to set up the transaction fee?</h2>
+            <p>When a Dapp sends a transaction request, it usually comes with a transaction fee, you only need to
+                confirm it. If there is no fee, or if the transaction is initiated by you, you can choose to add a fee
+                to prioritize the confirmation.
+                The manually added fee defaults to be a minimum of 0.001gas, which is completely sufficient for the
+                current network transaction volume, so the free configuration of fee is not supported for the time
+                being.</p>
+            <h2>How do I continue to use Teemo on my new device?</h2>
+            <p>Re-import the wallet backup file on the new device. However, since the data of the Teemo wallet is all
+                saved locally, you will not be able to view the transaction history on the old device on the new device.
+            </p>
+            <h2>Why can't I find the functions to switch languages, add tokens, and more?</h2>
+            <p>These features are under our development. In the next version of the wallet, our wallet will support
+                language switching, auto-locking, deleting transaction history, multi-wallet management, wallet backup,
+                wallet deletion, token management and more. </p>
+        </div>
+        <div class="goback-btn">
+            <a href="./index-en.html" class="goback-a">Go back</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-wrap">
+            <div class="relation-list">
+                <ul>
+                    <li class="img-icon">
+                        <a href="https://twitter.com/NewEconoLab" target="_blank" class="img-twitter"></a>
+                    </li>
+                    <li class="img-icon" id="qqfooter">
+                        <a href="#qqfooter" class="img-qq"></a>
+                    </li>
+                    <li class="img-icon" id="wechatfooter">
+                        <a href="#wechatfooter" class="img-wechat"></a>
+                    </li>
+                    <li class="img-icon">
+                        <a href="https://github.com/NewEconoLab" target="_blank" class="img-git"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-msg">
+                <span>Made with</span>
+                <img src="./img/loving-heart.png" alt="">
+                <span>by NewEconoLabs</span>
+                <br>
+                <span>© 2018 NewEconoLabs</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

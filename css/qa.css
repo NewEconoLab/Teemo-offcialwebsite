@@ -121,6 +121,7 @@ header .right .language-toggle .select-country ul li a {
   font-size: 16px;
   color: #333333;
   line-height: 24px;
+  text-align: justify;
 }
 .continar .qa-wrapper .intall-img {
   margin-bottom: 50px;

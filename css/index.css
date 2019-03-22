@@ -268,6 +268,14 @@ header .right .language-toggle .select-country ul li a {
   display: block;
   margin-bottom: 30px;
 }
+.content-other .content-three .trait-wrapper .trait-small .small-text-en {
+  font-size: 14px;
+  table-layout: fixed;
+  word-wrap: break-word;
+  word-break: normal;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
 .content-other .content-three .trait-smallbox-top,
 .content-other .content-three .trait-smallbox-bottom {
   width: 720px;
@@ -305,6 +313,8 @@ header .right .language-toggle .select-country ul li a {
   color: #333333;
   line-height: 30px;
   margin-top: 130px;
+  position: relative;
+  z-index: 1;
 }
 .content-other .content-four .about-content .about-text {
   display: block;

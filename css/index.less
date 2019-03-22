@@ -297,11 +297,18 @@ header{
                         width: 100%;
                     }
                 }
-                .small-title{
-                    
+                .small-title{                    
                     font-size: 24px;
                     display: block;
                     margin-bottom: 30px;
+                }
+                .small-text-en{
+                    font-size: 14px;
+                    table-layout: fixed;
+                    word-wrap: break-word;
+                    word-break: normal;
+                    text-align:justify;
+                    text-justify:inter-ideograph;
                 }
             }
         }
@@ -344,6 +351,8 @@ header{
             color: #333333;
             line-height: 30px;
             margin-top: 130px;
+            position: relative;
+            z-index: 1;
             .about-text{
                 display:block;
                 width: 1000px;
