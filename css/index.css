@@ -124,6 +124,25 @@ header .right .language-toggle .select-country ul li a {
   text-align: center;
   margin-top: 244px;
 }
+.content-one .contentone-wrap .top-wrapper {
+  margin-bottom: 84px;
+}
+.content-one .contentone-wrap .logo-img {
+  display: inline-block;
+  width: 126px;
+  height: 160px;
+  margin-right: 25px;
+}
+.content-one .contentone-wrap .logo-img img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.content-one .contentone-wrap .content-text {
+  display: inline-block;
+  width: 355px;
+  text-align: center;
+  vertical-align: bottom;
+}
 .content-one .contentone-wrap .big-title {
   font-size: 80px;
   font-weight: 600;
@@ -132,7 +151,6 @@ header .right .language-toggle .select-country ul li a {
 .content-one .contentone-wrap .small-title {
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 87px;
 }
 .content-one .contentone-wrap .download-img {
   display: inline-block;
@@ -156,8 +174,8 @@ header .right .language-toggle .select-country ul li a {
   cursor: pointer;
   position: absolute;
   bottom: 0;
-  right: -95px;
-  font-size: 20px;
+  right: -60px;
+  font-size: 14px;
   color: #FFFFFF;
 }
 .content-one .contentone-wrap .download-img .download-text:hover {

@@ -51,22 +51,22 @@
             <a href="./index-en.html">
                 <img src="./img/teemologo.png" alt="teemologo.png">
             </a>
-            <strong>用户Q&A</strong>
+            <strong>User Q&A</strong>
         </div>
         <div class="right" id="right">
             <!-- <span class="close-icon" id="closeBtn"></span> -->
-            <div class="language-toggle" id="language">
+            <div class="language-toggle" id="langQa">
                 <div class="language-left">
-                    <span>中</span>
-                    <img src="./img/ch.png" alt="">
+                    <span>En</span>
+                    <img src="./img/en.png" alt="">
                 </div>
                 <div class="triangle-wrap">
                     <div class="triangle"></div>
                 </div>
-                <div class="select-country" id="selectlang">
+                <div class="select-country" id="qaLang">
                     <ul>
-                        <li><a href="./index.html">中文</a></li>
-                        <li><a href="./index-en.html">English</a></li>
+                        <li><a href="./qa-zh.html">中文</a></li>
+                        <li><a href="./qa-en.html">English</a></li>
                     </ul>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                 wallet deletion, token management and more. </p>
         </div>
         <div class="goback-btn">
-            <a href="./index-en.html" class="goback-a">Go back</a>
+            <a href="./index-en.html" class="goback-a">Go Back</a>
         </div>
     </div>
     <footer>
@@ -158,6 +158,42 @@
             </div>
         </div>
     </footer>
+    <script src="./js/jquery-1.10.1.min.js"></script>
+    <script>
+            var appQa = {
+                init: function ()
+                {
+                    // 语言选择事件
+                    this.onLanguageClick();
+                },
+                onLanguageClick: function ()
+                {
+                    let flag = false;
+                    $("#langQa").on("click", function ()
+                    {
+                        flag = !flag;
+                        if (flag)
+                        {
+                            $("#qaLang").show();
+                        } else
+                        {
+                            $("#qaLang").hide();
+                        }
+                    })
+                    $("#qaLang").on("click", "li", function (e)
+                    {
+                        let event = e || window.event;
+                        event.stopPropagation();
+                        $("#qaLang").hide();
+                    })
+                }
+            }
+    
+            $(function ()
+            {
+                appQa.init();
+            })
+        </script>
 </body>
 
 </html>

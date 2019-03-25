@@ -55,7 +55,7 @@
         </div>
         <div class="right" id="right">
             <!-- <span class="close-icon" id="closeBtn"></span> -->
-            <div class="language-toggle" id="language">
+            <div class="language-toggle" id="langQa">
                 <div class="language-left">
                     <span>中</span>
                     <img src="./img/ch.png" alt="">
@@ -63,7 +63,7 @@
                 <div class="triangle-wrap">
                     <div class="triangle"></div>
                 </div>
-                <div class="select-country" id="selectlang">
+                <div class="select-country" id="qaLang">
                     <ul>
                         <li><a href="./index.html">中文</a></li>
                         <li><a href="./index-en.html">English</a></li>
@@ -132,6 +132,42 @@
             </div>
         </div>
     </footer>
+    <script src="./js/jquery-1.10.1.min.js"></script>
+    <script>
+            var appQa = {
+                init: function ()
+                {
+                    // 语言选择事件
+                    this.onLanguageClick();
+                },
+                onLanguageClick: function ()
+                {
+                    let flag = false;
+                    $("#langQa").on("click", function ()
+                    {
+                        flag = !flag;
+                        if (flag)
+                        {
+                            $("#qaLang").show();
+                        } else
+                        {
+                            $("#qaLang").hide();
+                        }
+                    })
+                    $("#qaLang").on("click", "li", function (e)
+                    {
+                        let event = e || window.event;
+                        event.stopPropagation();
+                        $("#qaLang").hide();
+                    })
+                }
+            }
+    
+            $(function ()
+            {
+                appQa.init();
+            })
+        </script>
 </body>
 
 </html>

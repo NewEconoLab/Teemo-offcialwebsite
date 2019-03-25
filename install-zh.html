@@ -21,7 +21,7 @@
         //     document.documentElement.style.fontSize = w / 3.75 + "px";
         // } else
         // {
-            document.documentElement.style.fontSize = w / 14.4 + "px";
+        document.documentElement.style.fontSize = w / 14.4 + "px";
         // }
 
         window.onresize = function ()
@@ -32,7 +32,7 @@
             //     document.documentElement.style.fontSize = w / 3.75 + "px";
             // } else
             // {
-                document.documentElement.style.fontSize = w / 14.4 + "px";
+            document.documentElement.style.fontSize = w / 14.4 + "px";
             // }
         }
     </script>
@@ -55,7 +55,7 @@
         </div>
         <div class="right" id="right">
             <!-- <span class="close-icon" id="closeBtn"></span> -->
-            <div class="language-toggle" id="language">
+            <div class="language-toggle" id="langInstall">
                 <div class="language-left">
                     <span>中</span>
                     <img src="./img/ch.png" alt="">
@@ -63,10 +63,10 @@
                 <div class="triangle-wrap">
                     <div class="triangle"></div>
                 </div>
-                <div class="select-country" id="selectlang">
+                <div class="select-country" id="installLang">
                     <ul>
-                        <li><a href="./index.html">中文</a></li>
-                        <li><a href="./index-en.html">English</a></li>
+                        <li><a href="./install-zh.html">中文</a></li>
+                        <li><a href="./install-en.html">English</a></li>
                     </ul>
                 </div>
             </div>
@@ -76,7 +76,6 @@
         <div class="qa-wrapper">
             <h1 class="qa-title">离线安装谷歌插件的方法</h1>
             <hr style="height:1px;border:none;border-top:1px dashed #B2B2B2;">
-            <h2>安全提示</h2>
             <p>1、点击本地下载，下载插件文件到电脑中</p>
             <img src="./img/step1.png" alt="" class="intall-img step1-img">
             <p>2、在 chrome 浏览器里打开扩展程序</p>
@@ -119,6 +118,42 @@
             </div>
         </div>
     </footer>
+    <script src="./js/jquery-1.10.1.min.js"></script>
+    <script>
+        var appInstall = {
+            init: function ()
+            {
+                // 语言选择事件
+                this.onLanguageClick();
+            },
+            onLanguageClick: function ()
+            {
+                let flag = false;
+                $("#langInstall").on("click", function ()
+                {
+                    flag = !flag;
+                    if (flag)
+                    {
+                        $("#installLang").show();
+                    } else
+                    {
+                        $("#installLang").hide();
+                    }
+                })
+                $("#installLang").on("click", "li", function (e)
+                {
+                    let event = e || window.event;
+                    event.stopPropagation();
+                    $("#installLang").hide();
+                })
+            }
+        }
+
+        $(function ()
+        {
+            appInstall.init();
+        })
+    </script>
 </body>
 
 </html>

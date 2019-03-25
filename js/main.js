@@ -52,7 +52,6 @@ var app = {
     onScrollEvent: function ()
     {
         var theHeight = $('#introduce').offset().top - document.documentElement.clientHeight + 300;
-        console.log(theHeight);
         $(document).on('scroll', function ()
         {
             if ($(document).scrollTop() >= theHeight)
