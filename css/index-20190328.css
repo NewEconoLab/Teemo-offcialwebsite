@@ -181,6 +181,20 @@ header .right .language-toggle .select-country ul li a {
 .content-one .contentone-wrap .download-img .download-text:hover {
   color: #D4D8FF;
 }
+.content-one .contentone-wrap .download-img .download-text-en {
+  vertical-align: bottom;
+  text-decoration: underline;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: -95px;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.content-one .contentone-wrap .download-img .download-text-en:hover {
+  color: #D4D8FF;
+}
 .content-other .content {
   position: relative;
   height: 750px;
