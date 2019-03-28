@@ -134,6 +134,12 @@ header .right .language-toggle .select-country ul li a {
 .continar .qa-wrapper .step1-img {
   width: 412px;
 }
+.continar .qa-wrapper .down1-img,
+.continar .qa-wrapper .down3-img,
+.continar .qa-wrapper .down4-img,
+.continar .qa-wrapper .down5-img {
+  width: 50%;
+}
 .continar .qa-wrapper .step2-img {
   width: 567px;
 }

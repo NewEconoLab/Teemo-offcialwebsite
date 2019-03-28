@@ -13,7 +13,7 @@
     <title>Teemo</title>
     <link rel="icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/qa.css">
+    <link rel="stylesheet" href="./css/qa-2019328.css">
     <script>
         var w = document.documentElement.clientWidth;
         // if (w < 728)
@@ -73,7 +73,21 @@
         </div>
     </header>
     <div class="continar">
-        <div class="qa-wrapper">
+            <div class="qa-wrapper">
+                    <h1 class="qa-title">How to install the plugin zip package</h1>
+                    <hr style="height:1px;border:none;border-top:1px dashed #B2B2B2;">
+                    <p>1、Click “local download”, download the plugin file to the computer. Unzip the file and go to the “.../Teemo_1.0.0/dist” directory. Copy the file directory.</p>
+                    <img src="./img/down1.png" alt="" class="intall-img down1-img">
+                    <p>2、Open the extension in the chrome browser</p>
+                    <img src="./img/step2.png" alt="" class="intall-img step2-img">
+                    <p>3、Open the developer mode in the extension. And click "Load unzipped extension".</p>
+                    <img src="./img/down3.png" alt="" class="intall-img down3-img">
+                    <p>4、Enter the”.../Teemo_1.0.0/dist” path into the extension directory path. Click and select the folder.</p>
+                    <img src="./img/down4.png" alt="" class="intall-img down4-img">
+                    <p>5、Installed successfully.</p>
+                    <img src="./img/down5.png" alt="" class="intall-img down5-img">
+                </div>
+        <!-- <div class="qa-wrapper">
             <h1 class="qa-title">How to install Google extensions offline</h1>
             <hr style="height:1px;border:none;border-top:1px dashed #B2B2B2;">
             <p>1、Click local download, download the plug-in file to the computer</p>
@@ -88,7 +102,7 @@
             <p>5、The browser will pop up a confirmation message to add the plugin, confirm that the plugin installation
                 is complete.</p>
             <img src="./img/step5.png" alt="" class="intall-img-last">
-        </div>
+        </div> -->
         <div class="goback-btn">
             <a href="./index-en.html" class="goback-a">Go Back</a>
         </div>
@@ -122,40 +136,40 @@
     </footer>
     <script src="./js/jquery-1.10.1.min.js"></script>
     <script>
-            var appInstall = {
-                init: function ()
-                {
-                    // 语言选择事件
-                    this.onLanguageClick();
-                },
-                onLanguageClick: function ()
-                {
-                    let flag = false;
-                    $("#langInstall").on("click", function ()
-                    {
-                        flag = !flag;
-                        if (flag)
-                        {
-                            $("#installLang").show();
-                        } else
-                        {
-                            $("#installLang").hide();
-                        }
-                    })
-                    $("#installLang").on("click", "li", function (e)
-                    {
-                        let event = e || window.event;
-                        event.stopPropagation();
-                        $("#installLang").hide();
-                    })
-                }
-            }
-    
-            $(function ()
+        var appInstall = {
+            init: function ()
             {
-                appInstall.init();
-            })
-        </script>
+                // 语言选择事件
+                this.onLanguageClick();
+            },
+            onLanguageClick: function ()
+            {
+                let flag = false;
+                $("#langInstall").on("click", function ()
+                {
+                    flag = !flag;
+                    if (flag)
+                    {
+                        $("#installLang").show();
+                    } else
+                    {
+                        $("#installLang").hide();
+                    }
+                })
+                $("#installLang").on("click", "li", function (e)
+                {
+                    let event = e || window.event;
+                    event.stopPropagation();
+                    $("#installLang").hide();
+                })
+            }
+        }
+
+        $(function ()
+        {
+            appInstall.init();
+        })
+    </script>
 </body>
 
 </html>
