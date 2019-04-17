@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>Teemo</title>
+    <link rel="icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/qa-20190417.css">
+    <script>
+        var w = document.documentElement.clientWidth;
+        // if (w < 728)
+        // {
+        //     document.documentElement.style.fontSize = w / 3.75 + "px";
+        // } else
+        // {
+        document.documentElement.style.fontSize = w / 14.4 + "px";
+        // }
+
+        window.onresize = function ()
+        {
+            // var w = document.documentElement.clientWidth;
+            // if (w < 728)
+            // {
+            //     document.documentElement.style.fontSize = w / 3.75 + "px";
+            // } else
+            // {
+            document.documentElement.style.fontSize = w / 14.4 + "px";
+            // }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- <div class="menu" id="menu"></div>
+        <div class="left">
+            <img src="./img/logo.png" alt="logo.png" hidden>
+            <img src="./img/logo.png" alt="logo2.png" hidden>
+            <span></span>
+        </div> -->
+        <!-- <span class="mobile-language"><a href="./index-En.html">中</a></span> -->
+        <div class="left">
+            <a href="./index-en.html">
+                <img src="./img/teemologo.png" alt="teemologo.png">
+            </a>
+            <strong>Privacy Policy</strong>
+        </div>
+        <div class="right" id="right">
+            <!-- <span class="close-icon" id="closeBtn"></span> -->
+            <div class="language-toggle" id="langPrivacy">
+                <div class="language-left">
+                    <span>En</span>
+                    <img src="./img/en.png" alt="">
+                </div>
+                <div class="triangle-wrap">
+                    <div class="triangle"></div>
+                </div>
+                <div class="select-country" id="privacyLang">
+                    <ul>
+                        <li><a href="./privacy-zh.html">中文</a></li>
+                        <li><a href="./privacy-en.html">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="continar">
+        <div class="privacy-wrapper">
+            <h1 class="privacy-title">Privacy Policy</h1>
+            <hr style="height:1px;border:none;border-top:1px dashed #B2B2B2;">
+            <h2>Overview</h2>
+            <p>The Teemo development team (hereinafter referred to as "we") understands the importance of personal information to users ("you") and Thanks for your trust in us. Through this policy, we will explain to you how Teemo collects, stores, protects, uses and provides your information to the third party and explains your rights.
+                In order to help you understand the type and purpose of the information we need to collect when using our services, we will explain each one to you in conjunction with specific services.
+            </p>
+            <p>You can access and manage your information, set the privacy feature, and cancel the Teemo wallet in the manner described in this policy.We respect and protect your privacy. When you use our services, we will collect, store, use and provide your information in accordance with the Teemo Privacy Policy (the “Policy”). At the same time, we will use this policy to explain to you how we can provide you with services to access, update, manage and protect your information.</p>
+            <h2>What information do we collect?</h2>
+            <p>We do not collect any information about you during your use of Teemo's functions. However, some functions require some information provided by you to continue, and this information will only be saved on your PC.
+                It should be noted that due to the openness of the blockchain, all transaction information is public, and every transaction you send will be exposed to everyone:
+            </p>
+            <p>1、Create / import an account</p>
+            <p class="otherline">When you create a new Teemo wallet, you need to provide the wallet name as the login name to distinguish different wallets. When importing an existing wallet, we will provide the default wallet name, which you can modify at your discretion.</p>
+            <p>2、Transfer</p>
+            <p class="otherline">
+                When you use the transfer function, you need to provide the payee's wallet address as the transfer destination address and provide the corresponding transfer currency and transfer amount. You can also provide an NNS domain name instead of a wallet address. The Teemo wallet will use the public interface to query the corresponding address. This query is completely anonymous.</p>
+            <p class="otherline">Please be aware that all transactions sent to the blockchain are public. Although we do not collect the transfer information, the address and transaction amount of both parties to the transaction are open to anyone.</p>
+            <p>3、Transaction record query</p>
+            <p class="otherline">
+                You can view all historical transaction records you have sent on Teemo on the Transaction History page. These records are all stored locally and are only read locally, so not all transaction records are included. If you want to view all your transaction history, you need to go to the blockchain explorer to view it.</p>
+            <p>4、Identity verification</p>
+            <p class="otherline">The login password is your unique identity to access Teemo. The Teemo wallet does not save your login password, only the encrypted wallet data is saved, which can only be unlocked with your login password.</p>
+            <p class="otherline">If you forget your password, you can reset your password and open your wallet by importing your private key. Please keep your private key in a safe place. We will not ask you for your password or private key at any time. Please do not give your password or private key to anyone.</p>
+            <p>5、Third-party application authorization</p>
+            <p class="otherline">When you use Teemo to access third-party applications, you need to authorize third-party applications on Teemo to continue. Teemo will temporarily save this authorization information locally until you clear all authorization information when you quit the browser.
+            </p>
+            <h2>How do we use technologies such as cookies?</h2>
+            <p>Teemo wallet does not use cookies, and your usage data is recorded in chrome-protected browser storage and in the computer memory. You can easily delete this data.</p>
+            <h2>How do we store and protect information?</h2>
+            <p>1、All the functional services provided by Teemo are stored in the Chrome extension storage area local to your device. This information is protected by the Chrome extension's isolation mechanism, ensuring that third-party applications cannot obtain this information without authorization.</p>
+            <p>2、Since your wallet information and transaction information are saved on the local device, when you switch to a new device, you cannot get the information stored in the old device. You will need to re-import the backup file to use the wallet, but the transaction history cannot be imported to the new device.</p>
+            <p>3、Teemo does not save the wallet private key in your device and saves the encrypted wallet private key. The decrypted private key is temporarily saved in the computer's memory and protected by memory isolation restrictions. The private key in memory will be cleared after logging out of a wallet.</p>
+            <p>4、Please be sure to keep your login password, wallet private key, encrypted string, and backup file. If you have forgotten your login password and have not backed up your private key, we have no way to help you find your wallet. Once you disclose the above information, you may suffer losses and may be detrimental to you. If you find that these identity elements may or have been compromised, please transfer the assets to your new wallet immediately.</p>
+            <h2>How do we provide information to the third-party?</h2>
+            <span>Third party log-in</span><br />
+            <span>When you use a third-party app, you can use Teemo to quickly log in to the app. The third-party app will request to connect to the Teemo wallet and will need your confirmation. We will provide some of your information to third parties based on your express consent, including your wallet address and the balance of certain tokens under the wallet address. Third-party applications may have separate privacy protection rules. Before authorizing us to provide your information to third parties, It is recommended that you review it carefully and make the choices you deem appropriate.</span>
+            <h2>How do you access and manage your information?</h2>
+            <p>During your use of Teemo, in order to make it easier for you to access and manage your information while protecting your right to cancel your account, we have provided you with the appropriate operational settings in your wallet.</p>
+            <p>1、When you want to clear the local transaction history or clear the authorization for third-party applications, you can permanently clear the data on the Teemo settings page. These data cannot be recovered after they are cleared.</p>
+            <p>2、If you wish to terminate the use of Teemo and permanently delete all information, you only need to delete the Teemo extension in the Chrome extension to clear all saved information.</p>
+            <h2>Third party services and sites</h2>
+            <p>Please note that your counter-party, the operator of a third party website you visit, and the third party that accesses your personal information from Teemo through our DAPI may have their own privacy protection policy. When you view third-party developed web pages or use third-party developed applications, these third parties may place their own cookies or web Beacons, which are not under our control and their use is not subject to this policy. We will work hard to require these entities to take measures to protect your personal information and we encourage you to contact them to obtain details about their privacy policy. If you find that these third-party created web pages or third-party developed applications are at risk, we recommend that you terminate the operation to protect your legal rights.
+            </p>
+            <h2>Changes to this policy</h2>
+            <p>We reserve the right to make changes to this Privacy Policy as we deem necessary from time to time or as may be required by law. All changes will be posted immediately on our Website and you are deemed to have accepted the new terms of the Privacy Policy when you first use the Website after such changes.</p>
+            <div class="date-text">
+                <h1>Teemo development team</h1>
+                <h1>April 11th, 2019</h1>
+            </div>
+        </div>
+        <div class="goback-btn">
+            <a href="./index-en.html" class="goback-a">Go Back</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-wrap">
+            <div class="relation-list">
+                <ul>
+                    <li class="img-icon">
+                        <a href="https://twitter.com/NewEconoLab" target="_blank" class="img-twitter"></a>
+                    </li>
+                    <li class="img-icon" id="qqfooter">
+                        <a href="#qqfooter" class="img-qq"></a>
+                    </li>
+                    <li class="img-icon" id="wechatfooter">
+                        <a href="#wechatfooter" class="img-wechat"></a>
+                    </li>
+                    <li class="img-icon">
+                        <a href="https://github.com/NewEconoLab" target="_blank" class="img-git"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-msg">
+                <span>Made with</span>
+                <img src="./img/loving-heart.png" alt="">
+                <span>by NewEconoLabs</span>
+                <br>
+                <span>© 2019 NewEconoLabs</span><a href="./privacy-en.html" class="footer-text">Privacy Policy</a><a href="./disclaimer-en.html">Terms of Use and Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/jquery-1.10.1.min.js"></script>
+    <script>
+        var appQa = {
+            init: function ()
+            {
+                // 语言选择事件
+                this.onLanguageClick();
+            },
+            onLanguageClick: function ()
+            {
+                let flag = false;
+                $("#langPrivacy").on("click", function ()
+                {
+                    flag = !flag;
+                    if (flag)
+                    {
+                        $("#privacyLang").show();
+                    } else
+                    {
+                        $("#privacyLang").hide();
+                    }
+                })
+                $("#privacyLang").on("click", "li", function (e)
+                {
+                    let event = e || window.event;
+                    event.stopPropagation();
+                    $("#privacyLang").hide();
+                })
+            }
+        }
+
+        $(function ()
+        {
+            appQa.init();
+        })
+    </script>
+</body>
+
+</html>

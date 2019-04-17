@@ -167,13 +167,55 @@ header .right .language-toggle .select-country ul li a {
   text-align: center;
   cursor: pointer;
 }
+.continar .privacy-wrapper {
+  width: 12rem;
+  min-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #B2B2B2;
+  border-radius: 10px;
+  padding: 50px 50px 100px 50px;
+  box-sizing: border-box;
+}
+.continar .privacy-wrapper .privacy-title {
+  font-size: 34px;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.continar .privacy-wrapper h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333333;
+}
+.continar .privacy-wrapper p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 24px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.continar .privacy-wrapper p.otherline {
+  text-indent: 25px;
+  margin-top: -20px;
+}
+.continar .privacy-wrapper span {
+  font-size: 16px;
+  color: #333333;
+  line-height: 24px;
+  text-align: justify;
+}
+.continar .privacy-wrapper .date-text {
+  margin-top: 70px;
+}
+.continar .privacy-wrapper .date-text h1 {
+  font-size: 18px;
+}
 footer {
   height: 200px;
   background: #fff;
   text-align: center;
 }
 footer .footer-wrap {
-  width: 300px;
   margin: 0 auto;
   font-size: 14px;
   color: #AFAFAF;
@@ -182,7 +224,7 @@ footer .footer-wrap {
   padding-top: 70px;
 }
 footer .footer-wrap .relation-list {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 footer .footer-wrap .relation-list ul .img-icon {
   display: inline-block;
@@ -272,4 +314,27 @@ footer .footer-wrap .footer-msg img {
   height: 10px;
   margin: 0 5px;
   vertical-align: middle;
+}
+footer .footer-wrap .footer-msg a {
+  text-decoration: underline;
+  font-size: 14px;
+  color: #B2B2B2;
+  cursor: pointer;
+}
+footer .footer-wrap .footer-msg .footer-text {
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+footer .footer-wrap .footer-msg .footer-text::before {
+  content: '.';
+  position: absolute;
+  top: -5px;
+  left: -20px;
+}
+footer .footer-wrap .footer-msg .footer-text::after {
+  content: '.';
+  position: absolute;
+  top: -5px;
+  right: -22px;
 }

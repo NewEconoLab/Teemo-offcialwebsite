@@ -543,19 +543,18 @@ header{
     }
 }
 footer{
-    height: 200px;
+    height: 150px;
     background: #fff;
     text-align: center;
     .footer-wrap{
-        width: 300px;
         margin: 0 auto;
         font-size: 14px;
         color: #AFAFAF;
         letter-spacing: 0.84px;
         line-height: 24px;
-        padding-top: 70px;
+        padding-top: 20px;
         .relation-list{
-            padding-bottom: 30px;
+            padding-bottom: 20px;
             ul{
                 .img-icon{
                     display: inline-block;
@@ -648,6 +647,29 @@ footer{
                 height: 10px;
                 margin: 0 5px;
                 vertical-align: middle;
+            }
+            a{
+                text-decoration: underline;
+                font-size: 14px;
+                color: #B2B2B2;
+                cursor: pointer;
+            }
+            .footer-text{
+                position: relative;
+                margin-left: 40px;
+                margin-right: 40px;
+                &::before{
+                    content: '.';
+                    position: absolute;
+                    top: -5px;
+                    left: -20px;
+                }
+                &::after{
+                    content: '.';
+                    position: absolute;
+                    top: -5px;
+                    right: -22px;
+                }
             }
         }
     }
